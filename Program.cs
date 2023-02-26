@@ -7,30 +7,22 @@ namespace HastTableDemo
     {
         public static void Main(string[] args)
         {
-            /*
-            Hashtable h1 = new Hashtable();
-            h1.Add(1, "sagar");
-            h1.Add(2, "shahu");
-            foreach(DictionaryEntry dictionaryEntry in h1) 
-            {
-                Console.WriteLine(dictionaryEntry.Key+ " : "+dictionaryEntry.Value);
-            }
-            */
+            Console.WriteLine("Hash table demo");
 
-            Findfrequency f1 = new Findfrequency();
-            string str = "To be or not to be";
-            // Console.WriteLine(str);
-            string[] arr = str.Split(' ');
-            foreach(var i in arr)
-            {
-                //Console.WriteLine(i);
-                f1.addlist(i);
-            }
-           
+            MyMapNode<string, string> hash = new MyMapNode<string, string>[5];
+            hash.Add("0", "To");
+            hash.Add("1", "be");
+            hash.Add("2", "or");
+            hash.Add("3", "not");
+            hash.Add("4", "to");
+            hash.Add("5", "be");
 
+            //string hash5 = hash.Get("5");
+            //Console.WriteLine("5th index value :" + hash5);
+            //hash.Remove("2");
+            //string hash2 = hash.Get("2");
 
-
-
+            //Console.WriteLine("2th index value : " + hash2);
         }  
     }
 }
