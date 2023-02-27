@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace HashTableDemo
 {
-    class Node
+    public class Node
     {
         public int data { get; set; }
         public Node LeftNode { get; set; }
-        public Node RightNode { get; set; }
+        public Node RightNode { get; set; }  
     }
 }
